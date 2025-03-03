@@ -1,19 +1,29 @@
 # x86-Emulation-on-Raspberry-Pi-4
 
-Section 1.0 – Setup Bill of Materials
+**Section 1.0 – Setup Bill of Materials**
+
 Section 1.1 – Hardware
+
 1.1.1.	Raspberry Pi 4B
-- 	https://www.raspberrypi.org/products/raspberry-pi-4-model-b/ 
-1.1.5.	32GB microSD card (must be at least 32GB)
+
+- 	https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
+  
+1.1.2.	32GB microSD card (must be at least 32GB)
+
 - 	https://www.oempcworld.com/OEMPCworld-com/500316.html 
 
 Section 1.2 – Software
-1.2.1.	Raspbian OS on 32GB microSD card
-- 	Raspbian Buster OS 2021-01-11 at the time of writing this:
--	 https://drive.google.com/file/d/1nL8H-wu_H6jeNQ4ItSB0ZrSzS_bqyGoI/view?usp=drive_link
 
-Section 2.0 – Setup x86 environment on ARM system
-2.1.	Put Raspbian OS (item 1.2.1) on 32GB microSD card (item 1.1.5).
+1.2.1.	Raspbian OS on 32GB microSD card
+
+- 	Raspbian Buster OS 2021-01-11 at the time of writing this:
+-	https://archive.org/download/2021-01-11-raspios-buster-armhf-full/2021-01-11-raspios-buster-armhf-full.img
+
+-----------------------------------------------------------------------------------------------
+**Section 2.0 – Setup x86 environment on ARM system**
+
+2.1.	Put Raspbian OS (item 1.2.1) on 32GB microSD card (item 1.1.2).
+
 2.2.	Run this command on the Raspberry Pi: sudo nano /etc/apt/sources.list
 
       Make sure to comment out this line: 
@@ -23,6 +33,7 @@ Section 2.0 – Setup x86 environment on ARM system
       deb http://raspbian.raspberrypi.org/raspbian/ oldoldstable main
       
       Press Ctrl+S to save changes. Press Ctrl+X to exit.
+      
 2.3.  Run these commands on the Raspberry Pi:
       
       sudo apt-get update
