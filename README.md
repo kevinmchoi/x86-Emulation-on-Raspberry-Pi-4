@@ -24,6 +24,7 @@ Section 2.0 – Setup x86 environment on ARM system
       
       Press Ctrl+S to save changes. Press Ctrl+X to exit.
 2.3.  Run these commands on the Raspberry Pi:
+      
       sudo apt-get update
       sudo apt-get install qemu-user-static binfmt-support debootstrap binutils gparted
       sudo debootstrap --foreign --arch i386 stretch ./chroot-stretch-i386 https://archive.debian.org/debian-archive/debian 
